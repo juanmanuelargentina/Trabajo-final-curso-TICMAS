@@ -1,0 +1,176 @@
+/* Estilos generales */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Estilos de la cabecera */
+
+.header {
+	background-color: #4a4a4a;
+	color: #fff;
+	padding: 20px 0;
+	position: relative;
+}
+
+.header::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.header img {
+	float: left;
+	margin-right: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.header-text {
+	float: left;
+}
+
+.header h1, .header h2 {
+	margin: 0 0 5px;
+}
+
+.header-nav {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.header-nav a {
+	display: inline-block;
+	color: #fff;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.header-nav a:hover {
+	text-decoration: underline;
+}
+
+
+/* Estilos de la sección */
+a {
+    color: white;
+  }
+.section {
+	margin: 50px 0;
+	padding: 30px;
+	background-color: #f4f4f4;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	position: relative;
+}
+
+.section::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.timeline {
+	position: relative;
+}
+
+.timeline-item {
+	position: relative;
+	margin-bottom: 50px;
+	padding-left: 40px;
+}
+
+.timeline-date {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #4a4a4a;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+.timeline-content {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.timeline h3 {
+	margin: 0 0 5px;
+}
+
+.timeline ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline li {
+	margin-bottom: 0px;
+}
+
+/* Estilos para el botón de contacto */
+
+.header-buttons {
+	float: center;
+}
+
+.btn {
+	background-color: #4a4a4a;
+	color: #fff;
+	border: none;
+	border-radius: 25px;
+	padding: 35px 40px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.btn:hover {
+	background-color: #4a4a4a;
+}
+
+
+.contact-btn {
+	background-color: #00c853;
+    ;
+}
+
+/* Estilos para las animaciones */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1, h2, h3, ul, li, div, p {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Estilo para los datos de contacto */
+  #contactar { 
+    color: #00c853;
+  }
